@@ -42,6 +42,49 @@
         </div>
     </header>
 
+     <!-- SignIn/SingUp -->
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <div id="modal-tabs">
+                    <button id="switch-to-sign-up" class="active">Sign Up</button>
+                    <button id="switch-to-sign-in">Sign In</button>
+                </div>
+                <div id="sign-in-form" class="form-section">
+                    <h2>Sign In</h2>
+                    <form method="post" action="signin.php">
+                        <label for="sign-in-email">Email:</label>
+                        <input type="email" id="sign-in-email" name="email" required>
+                        <label for="sign-in-otp">OTP:</label>
+                        <input type="text" id="sign-in-otp" name="otp" required>
+                        <button type="submit">Sign In</button>
+                    </form>
+                </div>                
+                <div id="sign-up-form" class="form-section active">
+                    <h2>Sign Up</h2>
+                    <form id="signup-form" action="signup.php" method="POST" enctype="multipart/form-data">
+                        <label for="user-type">User Type:</label>
+                        <select id="user-type" name="user_type" required>
+                            <option value="staff_member">Staff Member</option>
+                            <option value="student">Student</option>
+                        </select>
+                        <label for="sign-up-name">Name:</label>
+                        <input type="text" id="sign-up-name" name="name" required>
+                        <label for="sign-up-email">Email:</label>
+                        <input type="email" id="sign-up-email" name="email" required>
+                        <label for="sign-up-otp">OTP:</label>
+                        <input type="text" id="sign-up-otp" name="otp" required>
+                        <div id="id-card-upload" style="display: none;">
+                            <label for="id-card">Upload ID Card:</label>
+                            <input type="file" id="id-card" name="id_card" accept="image/*">
+                        </div>
+                        <button type="submit">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
     <main>
         <section class="Order-history-section">
             <h1>Order History</h1>
