@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <div class="logo">
+                </div>
+            </div>
+
+            <div class="search-color">
+                <div class="nav-search">
+                    <input placeholder="Search CSIR-CEERI index !" class="searchinput">
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="account">
+                <p id="home-page">Home</p>
+            </div>
+
+            <div class="account">
+                <p id="sign-in-link">Login</p>
+            </div>
+
+           <div class="account">
+                <p id="Order-history-link">Order History</p>
+            </div>
+
+            <div class="cart" id="cart-link">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="cart-section">
+            <h1>Your Cart</h1>
+            <div class="cart-list">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-total">
+                <h2>Total: ₹0.00</h2>
+            </div>
+            <div class="checkout-actions">
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
