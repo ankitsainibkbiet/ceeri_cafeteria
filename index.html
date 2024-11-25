@@ -14,7 +14,6 @@
 <body>
 
 <!-- Naviation-bar -->
- 
     <header>
         <div class="navbar">
             <div class="nav-logo">
@@ -24,7 +23,7 @@
 
             <div class="search-color">
                 <div class="nav-search">
-                    <input placeholder="Search CSIR-CEERI CAFETERIA !" class="searchinput">
+                    <input placeholder="Search CSIR-CEERI Cafeteria !" class="searchinput">
                     <div class="search-icon">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
@@ -51,9 +50,7 @@
     
     <div class="main">
 
-
         <!-- SignIn/SingUp -->
-
         <div id="myModal" class="modal">
             <div class="modal-content">
                 <span class="close-btn">&times;</span>
@@ -66,11 +63,12 @@
                     <form method="post" action="signin.php">
                         <label for="sign-in-email">Email:</label>
                         <input type="email" id="sign-in-email" name="email" required>
-                        <label for="sign-in-otp">OTP:</label>
-                        <input type="text" id="sign-in-otp" name="otp" required>
+                        <label for="sign-in-password">Password:</label>
+                        <input type="password" id="sign-in-password" name="password" required>
                         <button type="submit">Sign In</button>
+                        <a href="#" id="forgot-password-link">Forgot Password ?</a>
                     </form>
-                </div>                
+                </div>
                 <div id="sign-up-form" class="form-section active">
                     <h2>Sign Up</h2>
                     <form id="signup-form" action="signup.php" method="POST" enctype="multipart/form-data">
@@ -96,9 +94,7 @@
         </div>
     
     
-
      <!-- Background-Image -->
-
         <div class="container">
             <div class="heroimg">
                 <div class="hero-text">
@@ -109,15 +105,13 @@
                 </div>
             </div>
     
-
     <!-- Food-Menu -->
-
             <div class="shop">
     
                 <div class="box">
                     <div class="box-content">
                         <h2>Tea Coupon</h2>
-                        <div class="box-img" style="background-image: url('image/logo.jpg');"></div>
+                        <div class="box-img" style="background-image: url('image/tea.jpeg');"></div>
                         <div class="line">
                             <p>&#8377;8/-</p>
                             <div class="QTY">
@@ -135,7 +129,7 @@
                 <div class="box">
                     <div class="box-content">
                         <h2>Coffee/Snacks Coupon</h2>
-                        <div class="box-img" style="background-image: url('image/logo.jpg');"></div>
+                        <div class="box-img" style="background-image: url('image/coffee.jpeg');"></div>
                         <div class="line">
                             <p>&#8377;10/-</p>
                             <div class="QTY">
@@ -152,7 +146,7 @@
                 <div class="box">
                     <div class="box-content">
                         <h2>Normal Lunch (Employee)</h2>
-                        <div class="box-img" style="background-image: url('image/logo.jpg');"></div>
+                        <div class="box-img" style="background-image: url('image/lunch1.jpg');"></div>
                         <div class="line">
                             <p>&#8377;45/-</p>
                             <div class="QTY">
@@ -169,7 +163,7 @@
                 <div class="box">
                     <div class="box-content">
                         <h2>Special Lunch (Employee)</h2>
-                        <div class="box-img" style="background-image: url('image/logo.jpg');"></div>
+                        <div class="box-img" style="background-image: url('image/lunch2.jpeg');"></div>
                         <div class="line">
                             <p>&#8377;80/-</p>
                             <div class="QTY">
@@ -186,7 +180,7 @@
                 <div class="box">
                     <div class="box-content">
                         <h2>Normal Lunch (Guest)</h2>
-                        <div class="box-img" style="background-image: url('image/logo.jpg');"></div>
+                        <div class="box-img" style="background-image: url('image/lunch3.jpg');"></div>
                         <div class="line">
                             <p>&#8377;70/-</p>
                             <div class="QTY">
@@ -203,7 +197,7 @@
                 <div class="box">
                     <div class="box-content">
                         <h2>Special Lunch (Guest)</h2>
-                        <div class="box-img" style="background-image: url('image/logo.jpg');"></div>
+                        <div class="box-img" style="background-image: url('image/lunch4.jpg');"></div>
                         <div class="line">
                             <p>&#8377;130/-</p>
                             <div class="QTY">
@@ -220,7 +214,7 @@
                 <div class="box">
                     <div class="box-content">
                         <h2>Normal Dinner (Employee)</h2>
-                        <div class="box-img" style="background-image: url('image/logo.jpg');"></div>
+                        <div class="box-img" style="background-image: url('image/Dinner1.jpg');"></div>
                         <div class="line">
                             <p>&#8377;45/-</p>
                             <div class="QTY">
@@ -237,7 +231,7 @@
                 <div class="box">
                     <div class="box-content">
                         <h2>Special Dinner (Employee)</h2>
-                        <div class="box-img" style="background-image: url('image/logo.jpg');"></div>
+                        <div class="box-img" style="background-image: url('image/Dinner2.jpg');"></div>
                         <div class="line">
                             <p>&#8377;80/-</p>
                             <div class="QTY">
@@ -254,7 +248,7 @@
                 <div class="box">
                     <div class="box-content">
                         <h2>Normal Dinner (Guest)</h2>
-                        <div class="box-img" style="background-image: url('image/logo.jpg');"></div>
+                        <div class="box-img" style="background-image: url('image/Dinner3.jpg');"></div>
                         <div class="line">
                             <p>&#8377;70/-</p>
                             <div class="QTY">
@@ -271,7 +265,7 @@
                 <div class="box">
                     <div class="box-content">
                         <h2>Special Dinner (Guest)</h2>
-                        <div class="box-img" style="background-image: url('image/logo.jpg');"></div>
+                        <div class="box-img" style="background-image: url('image/Dinner4.jpeg');"></div>
                         <div class="line">
                             <p>&#8377;130/-</p>
                             <div class="QTY">
@@ -288,7 +282,7 @@
                 <div class="box">
                     <div class="box-content">
                         <h2>Roti/Puri (Lunch Time)</h2>
-                        <div class="box-img" style="background-image: url('image/logo.jpg');"></div>
+                        <div class="box-img" style="background-image: url('image/Roti1.jpg');"></div>
                         <div class="line">
                             <p>&#8377;5/-</p>
                             <div class="QTY">
@@ -305,7 +299,7 @@
                 <div class="box">
                     <div class="box-content">
                         <h2>Roti/Puri (Dinner Time)</h2>
-                        <div class="box-img" style="background-image: url('image/logo.jpg');"></div>
+                        <div class="box-img" style="background-image: url('image/Roti2.jpg');"></div>
                         <div class="line">
                             <p>&#8377;5/-</p>
                             <div class="QTY">
@@ -322,7 +316,7 @@
                 <div class="box">
                     <div class="box-content">
                         <h2>Sabji (Lunch Time)</h2>
-                        <div class="box-img" style="background-image: url('image/logo.jpg');"></div>
+                        <div class="box-img" style="background-image: url('image/sabzi1.jpg');"></div>
                         <div class="line">
                             <p>&#8377;20/-</p>
                             <div class="QTY">
@@ -339,7 +333,7 @@
                 <div class="box">
                     <div class="box-content">
                         <h2>Sabji (Dinner Time)</h2>
-                        <div class="box-img" style="background-image: url('image/logo.jpg');"></div>
+                        <div class="box-img" style="background-image: url('image/sabji2.jpg');"></div>
                         <div class="line">
                             <p>&#8377;20/-</p>
                             <div class="QTY">
@@ -356,7 +350,7 @@
                 <div class="box">
                     <div class="box-content">
                         <h2>Special Sabji (Lunch Time)</h2>
-                        <div class="box-img" style="background-image: url('image/logo.jpg');"></div>
+                        <div class="box-img" style="background-image: url('image/sabji3.jpg');"></div>
                         <div class="line">
                             <p>&#8377;40/-</p>
                             <div class="QTY">
@@ -373,7 +367,7 @@
                 <div class="box">
                     <div class="box-content">
                         <h2>Special Sabji (Dinner Time)</h2>
-                        <div class="box-img" style="background-image: url('image/logo.jpg');"></div>
+                        <div class="box-img" style="background-image: url('image/Sabji4.jpg');"></div>
                         <div class="line">
                             <p>&#8377;100/-</p>
                             <div class="QTY">
@@ -390,49 +384,47 @@
         </div>
     </div>
 
-
     
 <!-- Footer-Bar -->
-
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <h2>About Us</h2>
-                <p>We are dedicated to providing the best index experience at CSIR-CEERI. Enjoy our wide range of food and beverages.</p>
-            </div>
-            
-            <div class="footer-section">
-                <h2>Contact Us</h2>
-                <p>Email: <a href="mailto:support@csirceeri.com">support@csirceeri.com</a></p>
-                <p>Phone: +123-456-7890</p>
-                <p>Address: CSIR-CEERI Campus, Pilani, Rajasthan, India</p>
-            </div>
-            
-            <div class="footer-section">
-                <h2>Follow Us</h2>
-                <div class="social-media">
-                    <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-                    <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            
-            <div class="footer-section">
-                <h2>Quick Links</h2>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Order-history.html">Order History</a></li>
-                    <li><a href="Cart.html">Cart</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h2>About Us</h2>
+            <p>We are dedicated to providing the best cafeteria experience at CSIR-CEERI. Enjoy our wide range of food and beverages.</p>
+        </div>
+        
+        <div class="footer-section">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:support@csirceeri.com">support@csirceeri.com</a></p>
+            <p>Phone: +123-456-7890</p>
+            <p>Address: CSIR-CEERI Campus, Pilani, Rajasthan, India</p>
+        </div>
+        
+        <div class="footer-section">
+            <h2>Follow Us</h2>
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 CSIR-CEERI index. All Rights Reserved.</p>
-            <p>MADE WITH <i class="fa-regular fa-heart"></i> FROM BKBIET</p>
+        
+        <div class="footer-section">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="Cafeteria.html">Home</a></li>
+                <li><a href="Order-history.html">Order History</a></li>
+                <li><a href="Cart.html">Cart</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-    </footer>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 CSIR-CEERI Cafeteria. All Rights Reserved.</p>
+        <p>MADE WITH <i class="fa-regular fa-heart"></i> FROM BKBIET</p>
+    </div>
+</footer>
 
 
 <script src="Script.js"></script>
